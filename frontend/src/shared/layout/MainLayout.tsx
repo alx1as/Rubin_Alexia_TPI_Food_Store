@@ -1,0 +1,3 @@
+import { Outlet, Link } from 'react-router-dom'
+import { Navbar } from './Navbar'
+export function MainLayout() { return <div className="flex min-h-screen flex-col"><Navbar/><main id="contenido" className="mx-auto w-full max-w-7xl flex-1 px-5 py-8 md:py-10"><Outlet/></main><footer className="mt-14 border-t border-[#e9e4d9] bg-[#f2efe5] py-7 text-sm text-[#657365]"><div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5"><span><strong className="text-[#273e30]">foodstore.</strong> Algo rico está por llegar.</span><Link to="/" className="underline underline-offset-4">Volver al menú</Link></div><p className="mx-auto mt-3 max-w-7xl px-5 text-xs">Proyecto académico · Trabajo Práctico Integrador · Programación IV · UTN</p></footer></div> }
